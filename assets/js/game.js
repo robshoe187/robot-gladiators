@@ -13,9 +13,24 @@ var fight = function() {
   window.alert("Welcome to Robot Gladiators!");
   enemyHealth = (playerAttack - enemyHealth);
   console.log(enemyHealth);
+   // check enemy's health
+   if (enemyHealth <= 0) {
+    window.alert(enemyName + " has died!");
+  } 
+  else {
+    window.alert(enemyName + " still has " + enemyHealth + " health left.");
+  }
   playerHealth = (playerHealth - enemyAttack);
   console.log(playerHealth);
 
-};
+  // check player's health
+  if (playerHealth <= 0) {
+    window.alert(playerName + " has died!");
+  } 
+  else {
+    window.alert(playerName + " still has " + playerHealth + " health left.");
+  }
+
+}
 
 fight();
