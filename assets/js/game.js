@@ -7,10 +7,14 @@ var playerMoney = 10;
 // You can also log multiple values at once like this
 console.log(playerName, playerAttack, playerHealth);
 
-var enemyName = "Roborto";
+var enemyNames = ["Roborto", "Amy Android", "Robo Trumble"];
 var enemyHealth = 50;
 var enemyAttack = 12;
 
+for (let index = 0; index < enemyNames.length; index++) {
+   fight(enemyNames[index]);
+  
+}
 // fight function
 var fight = function() {
   // Alert players that they are starting the round
@@ -68,4 +72,4 @@ var fight = function() {
 };
 
 // run fight function to start game
-fight();
+// fight();
